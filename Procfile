@@ -1,1 +1,1 @@
-web: gunicorn balance_server.wsgi
+web: python manage.py migrate && gunicorn balance_server.wsgi
