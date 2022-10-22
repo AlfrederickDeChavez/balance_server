@@ -10,7 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(os.path.join(BASE_DIR, ".env"))
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("SECRET_KEY")
+SECRET_KEY = '-na6nk_1ydv_$q0rpz%6(3hjlc76rkrqve=cyw^^f+o3nv%r^4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
