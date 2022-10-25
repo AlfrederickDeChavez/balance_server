@@ -11,7 +11,7 @@ class FoodView(APIView):
         user = request.user
         foods = user.food_set.all()
         intake = foods.filter(date_consumed=datetime.date.today())
-        serializer = FoodSerializer(intake, many=True)
+        serializer = FoodSerializer(intake, many=True) 
         return Response(serializer.data)
 
     def post(self, request, format=None):

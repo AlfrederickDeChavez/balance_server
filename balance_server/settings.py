@@ -34,6 +34,7 @@ INSTALLED_APPS = [
 
     'accounts.apps.AccountsConfig',
     'foods.apps.FoodsConfig',
+    'exercise.apps.ExerciseConfig'
 
 
 ]
