@@ -7,7 +7,7 @@ User = get_user_model()
 class Food(models.Model):
     name = models.CharField(max_length=255, blank=True)
     category = models.CharField(max_length=255, blank=True)
-    quantity = models.FloatField()
+    quantity = models.FloatField(null=True, blank=True)
     date_consumed = models.DateTimeField()
     user = models.ManyToManyField(User)
     calories = models.FloatField(null=True, blank=True)
